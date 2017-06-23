@@ -12,7 +12,8 @@
 		89452E5F1EFC72610063A9D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89452E5D1EFC72610063A9D0 /* Main.storyboard */; };
 		89452E621EFC726B0063A9D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89452E601EFC726B0063A9D0 /* GoogleService-Info.plist */; };
 		89452E6A1EFC77960063A9D0 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89452E691EFC77960063A9D0 /* Login.storyboard */; };
-		89452E6C1EFC79F30063A9D0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89452E6B1EFC79F30063A9D0 /* LoginViewController.swift */; };
+		894C18C71EFDDA8000FA1C6A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894C18C61EFDDA8000FA1C6A /* User.swift */; };
+		894C18C91EFDDAF000FA1C6A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894C18C81EFDDAF000FA1C6A /* LoginViewController.swift */; };
 		89BE4C651EFC6EE900803B42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BE4C641EFC6EE900803B42 /* AppDelegate.swift */; };
 		89BE4C6C1EFC6EE900803B42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89BE4C6B1EFC6EE900803B42 /* Assets.xcassets */; };
 		D29177571469E3104857B4C4 /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70120B9C84D8D23646C7FABA /* Pods_Makestagram.framework */; };
@@ -28,7 +29,8 @@
 		89452E601EFC726B0063A9D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Supporting/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		89452E611EFC726B0063A9D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Supporting/Info.plist; sourceTree = "<group>"; };
 		89452E691EFC77960063A9D0 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Storyboards/Login.storyboard; sourceTree = "<group>"; };
-		89452E6B1EFC79F30063A9D0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		894C18C61EFDDA8000FA1C6A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
+		894C18C81EFDDAF000FA1C6A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
 		89BE4C611EFC6EE900803B42 /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BE4C641EFC6EE900803B42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89BE4C6B1EFC6EE900803B42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,8 +69,8 @@
 		89452E651EFC74F40063A9D0 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				894C18C81EFDDAF000FA1C6A /* LoginViewController.swift */,
 				89452E5A1EFC72550063A9D0 /* ViewController.swift */,
-				89452E6B1EFC79F30063A9D0 /* LoginViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -81,6 +83,14 @@
 				89452E5C1EFC72610063A9D0 /* LaunchScreen.storyboard */,
 			);
 			name = Supporting;
+			sourceTree = "<group>";
+		};
+		894C18CA1EFDDB7E00FA1C6A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				894C18C61EFDDA8000FA1C6A /* User.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		89BE4C581EFC6EE900803B42 = {
@@ -106,9 +116,10 @@
 			children = (
 				89BE4C641EFC6EE900803B42 /* AppDelegate.swift */,
 				89BE4C6B1EFC6EE900803B42 /* Assets.xcassets */,
+				894C18CA1EFDDB7E00FA1C6A /* Models */,
 				89452E641EFC74830063A9D0 /* Storyboards */,
-				89452E651EFC74F40063A9D0 /* View Controllers */,
 				89452E661EFC75090063A9D0 /* Supporting */,
+				89452E651EFC74F40063A9D0 /* View Controllers */,
 			);
 			path = Makestagram;
 			sourceTree = "<group>";
@@ -247,7 +258,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89452E6C1EFC79F30063A9D0 /* LoginViewController.swift in Sources */,
+				894C18C91EFDDAF000FA1C6A /* LoginViewController.swift in Sources */,
+				894C18C71EFDDA8000FA1C6A /* User.swift in Sources */,
 				89452E5B1EFC72550063A9D0 /* ViewController.swift in Sources */,
 				89BE4C651EFC6EE900803B42 /* AppDelegate.swift in Sources */,
 			);
