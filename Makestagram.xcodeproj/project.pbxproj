@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8925E1DB1F017B5E00E3C2EC /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8925E1DA1F017B5E00E3C2EC /* CreateUsernameViewController.swift */; };
+		8925E1E11F018BF300E3C2EC /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8925E1E01F018BF300E3C2EC /* UserService.swift */; };
 		89452E5B1EFC72550063A9D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89452E5A1EFC72550063A9D0 /* ViewController.swift */; };
 		89452E5E1EFC72610063A9D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89452E5C1EFC72610063A9D0 /* LaunchScreen.storyboard */; };
 		89452E5F1EFC72610063A9D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89452E5D1EFC72610063A9D0 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		6587EB256310D9831CC09EE0 /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
 		70120B9C84D8D23646C7FABA /* Pods_Makestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8925E1DA1F017B5E00E3C2EC /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
+		8925E1E01F018BF300E3C2EC /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserService.swift; path = Services/UserService.swift; sourceTree = "<group>"; };
 		89452E5A1EFC72550063A9D0 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
 		89452E5C1EFC72610063A9D0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89452E5D1EFC72610063A9D0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
@@ -57,6 +59,14 @@
 				6587EB256310D9831CC09EE0 /* Pods-Makestagram.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8925E1E21F018BFE00E3C2EC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8925E1E01F018BF300E3C2EC /* UserService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		89452E641EFC74830063A9D0 /* Storyboards */ = {
@@ -120,6 +130,7 @@
 				89BE4C641EFC6EE900803B42 /* AppDelegate.swift */,
 				89BE4C6B1EFC6EE900803B42 /* Assets.xcassets */,
 				894C18CA1EFDDB7E00FA1C6A /* Models */,
+				8925E1E21F018BFE00E3C2EC /* Services */,
 				89452E641EFC74830063A9D0 /* Storyboards */,
 				89452E661EFC75090063A9D0 /* Supporting */,
 				89452E651EFC74F40063A9D0 /* View Controllers */,
@@ -263,6 +274,7 @@
 			files = (
 				894C18C91EFDDAF000FA1C6A /* LoginViewController.swift in Sources */,
 				894C18C71EFDDA8000FA1C6A /* User.swift in Sources */,
+				8925E1E11F018BF300E3C2EC /* UserService.swift in Sources */,
 				89452E5B1EFC72550063A9D0 /* ViewController.swift in Sources */,
 				8925E1DB1F017B5E00E3C2EC /* CreateUsernameViewController.swift in Sources */,
 				89BE4C651EFC6EE900803B42 /* AppDelegate.swift in Sources */,
