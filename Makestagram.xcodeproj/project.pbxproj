@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8925E1E11F018BF300E3C2EC /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8925E1E01F018BF300E3C2EC /* UserService.swift */; };
 		8925E1E41F01AD8900E3C2EC /* CreateUsernameViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8925E1E31F01AD8900E3C2EC /* CreateUsernameViewControler.swift */; };
+		8925E1E61F01C03100E3C2EC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8925E1E51F01C03100E3C2EC /* Constants.swift */; };
+		8925E1E81F01C10D00E3C2EC /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8925E1E71F01C10D00E3C2EC /* Storyboard+Utility.swift */; };
 		89452E5B1EFC72550063A9D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89452E5A1EFC72550063A9D0 /* ViewController.swift */; };
 		89452E5E1EFC72610063A9D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89452E5C1EFC72610063A9D0 /* LaunchScreen.storyboard */; };
 		89452E5F1EFC72610063A9D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89452E5D1EFC72610063A9D0 /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 		70120B9C84D8D23646C7FABA /* Pods_Makestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8925E1E01F018BF300E3C2EC /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserService.swift; path = Services/UserService.swift; sourceTree = "<group>"; };
 		8925E1E31F01AD8900E3C2EC /* CreateUsernameViewControler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateUsernameViewControler.swift; path = Controllers/CreateUsernameViewControler.swift; sourceTree = "<group>"; };
+		8925E1E51F01C03100E3C2EC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Supporting/Constants.swift; sourceTree = "<group>"; };
+		8925E1E71F01C10D00E3C2EC /* Storyboard+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Storyboard+Utility.swift"; path = "Extensions/Storyboard+Utility.swift"; sourceTree = "<group>"; };
 		89452E5A1EFC72550063A9D0 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
 		89452E5C1EFC72610063A9D0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89452E5D1EFC72610063A9D0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
@@ -69,6 +73,14 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
+		8925E1E91F01C11200E3C2EC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8925E1E71F01C10D00E3C2EC /* Storyboard+Utility.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		89452E641EFC74830063A9D0 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +106,7 @@
 				89452E601EFC726B0063A9D0 /* GoogleService-Info.plist */,
 				89452E611EFC726B0063A9D0 /* Info.plist */,
 				89452E5C1EFC72610063A9D0 /* LaunchScreen.storyboard */,
+				8925E1E51F01C03100E3C2EC /* Constants.swift */,
 			);
 			name = Supporting;
 			sourceTree = "<group>";
@@ -129,6 +142,7 @@
 			children = (
 				89BE4C641EFC6EE900803B42 /* AppDelegate.swift */,
 				89BE4C6B1EFC6EE900803B42 /* Assets.xcassets */,
+				8925E1E91F01C11200E3C2EC /* Extensions */,
 				894C18CA1EFDDB7E00FA1C6A /* Models */,
 				8925E1E21F018BFE00E3C2EC /* Services */,
 				89452E641EFC74830063A9D0 /* Storyboards */,
@@ -275,7 +289,9 @@
 				894C18C91EFDDAF000FA1C6A /* LoginViewController.swift in Sources */,
 				894C18C71EFDDA8000FA1C6A /* User.swift in Sources */,
 				8925E1E11F018BF300E3C2EC /* UserService.swift in Sources */,
+				8925E1E81F01C10D00E3C2EC /* Storyboard+Utility.swift in Sources */,
 				89452E5B1EFC72550063A9D0 /* ViewController.swift in Sources */,
+				8925E1E61F01C03100E3C2EC /* Constants.swift in Sources */,
 				89BE4C651EFC6EE900803B42 /* AppDelegate.swift in Sources */,
 				8925E1E41F01AD8900E3C2EC /* CreateUsernameViewControler.swift in Sources */,
 			);
