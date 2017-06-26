@@ -50,7 +50,6 @@ extension LoginViewController: FUIAuthDelegate {
                 print("Welcome back, \(user.username).")
                 User.setCurrent(user)
                 
-                let storyboard = UIStoryboard(name: "Main", bundle: .main)
                 let initialViewController = UIStoryboard.initialViewController(for: .main)
                 self.view.window?.rootViewController = initialViewController
                 self.view.window?.makeKeyAndVisible()
@@ -60,7 +59,6 @@ extension LoginViewController: FUIAuthDelegate {
             }
             
         }
-        
         
         print("Handle user signup/login")
     }
