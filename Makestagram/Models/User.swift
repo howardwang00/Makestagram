@@ -13,6 +13,18 @@ class User {
     let uid: String
     let username: String
     
+    private static var _current: User?
+    
+    static var current: User {
+        guard let currentUser = _current else {
+            fatalError("Error: current user does not exist")
+        }
+        return currentUser
+    }
+    static func setCurrent(_ user: User) {
+        _current = user
+    }
+    
     init(uid: String, username: String) {
         self.uid = uid
         self.username = username

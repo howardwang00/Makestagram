@@ -29,6 +29,8 @@ class CreateUsernameViewController: UIViewController {
             guard let user = user else { return }
             print("Created new user: \(user.username)")
             
+            User.setCurrent(user)
+            
             let storyboard = UIStoryboard(name: "Main", bundle: .main)
             if let initialViewController = storyboard.instantiateInitialViewController() {
                 self.view.window?.rootViewController = initialViewController
