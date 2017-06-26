@@ -50,7 +50,7 @@ extension LoginViewController: FUIAuthDelegate {
             if let user = User(snapshot: snapshot) {
                 print("Welcome back, \(user.username).")
             } else {
-                print("New User")
+                self.performSegue(withIdentifier: "toCreateUsername", sender: self)
             }
             
         })

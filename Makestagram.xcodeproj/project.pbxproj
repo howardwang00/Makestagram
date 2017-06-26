@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8925E1DB1F017B5E00E3C2EC /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8925E1DA1F017B5E00E3C2EC /* CreateUsernameViewController.swift */; };
 		89452E5B1EFC72550063A9D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89452E5A1EFC72550063A9D0 /* ViewController.swift */; };
 		89452E5E1EFC72610063A9D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89452E5C1EFC72610063A9D0 /* LaunchScreen.storyboard */; };
 		89452E5F1EFC72610063A9D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89452E5D1EFC72610063A9D0 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		13B9823BF275AA6B05240DFA /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
 		6587EB256310D9831CC09EE0 /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
 		70120B9C84D8D23646C7FABA /* Pods_Makestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8925E1DA1F017B5E00E3C2EC /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
 		89452E5A1EFC72550063A9D0 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
 		89452E5C1EFC72610063A9D0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89452E5D1EFC72610063A9D0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			children = (
 				894C18C81EFDDAF000FA1C6A /* LoginViewController.swift */,
 				89452E5A1EFC72550063A9D0 /* ViewController.swift */,
+				8925E1DA1F017B5E00E3C2EC /* CreateUsernameViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				894C18C91EFDDAF000FA1C6A /* LoginViewController.swift in Sources */,
 				894C18C71EFDDA8000FA1C6A /* User.swift in Sources */,
 				89452E5B1EFC72550063A9D0 /* ViewController.swift in Sources */,
+				8925E1DB1F017B5E00E3C2EC /* CreateUsernameViewController.swift in Sources */,
 				89BE4C651EFC6EE900803B42 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
