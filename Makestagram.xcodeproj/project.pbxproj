@@ -15,6 +15,8 @@
 		8925E1ED1F01D5DA00E3C2EC /* FindFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8925E1EC1F01D5DA00E3C2EC /* FindFriendsViewController.swift */; };
 		892839471F02DB8C00AEF97C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892839461F02DB8C00AEF97C /* MainTabBarController.swift */; };
 		892839491F02E11F00AEF97C /* MGPhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892839481F02E11F00AEF97C /* MGPhotoHelper.swift */; };
+		8928394E1F030EBA00AEF97C /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8928394D1F030EBA00AEF97C /* StorageService.swift */; };
+		892839501F03117F00AEF97C /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8928394F1F03117F00AEF97C /* PostService.swift */; };
 		89452E5E1EFC72610063A9D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89452E5C1EFC72610063A9D0 /* LaunchScreen.storyboard */; };
 		89452E5F1EFC72610063A9D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89452E5D1EFC72610063A9D0 /* Main.storyboard */; };
 		89452E621EFC726B0063A9D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89452E601EFC726B0063A9D0 /* GoogleService-Info.plist */; };
@@ -38,6 +40,8 @@
 		8925E1EC1F01D5DA00E3C2EC /* FindFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FindFriendsViewController.swift; path = Controllers/FindFriendsViewController.swift; sourceTree = "<group>"; };
 		892839461F02DB8C00AEF97C /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabBarController.swift; path = Controllers/MainTabBarController.swift; sourceTree = "<group>"; };
 		892839481F02E11F00AEF97C /* MGPhotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MGPhotoHelper.swift; path = Helpers/MGPhotoHelper.swift; sourceTree = "<group>"; };
+		8928394D1F030EBA00AEF97C /* StorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StorageService.swift; path = Services/StorageService.swift; sourceTree = "<group>"; };
+		8928394F1F03117F00AEF97C /* PostService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostService.swift; path = Services/PostService.swift; sourceTree = "<group>"; };
 		89452E5C1EFC72610063A9D0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89452E5D1EFC72610063A9D0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
 		89452E601EFC726B0063A9D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Supporting/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				8925E1E01F018BF300E3C2EC /* UserService.swift */,
+				8928394D1F030EBA00AEF97C /* StorageService.swift */,
+				8928394F1F03117F00AEF97C /* PostService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -304,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				894C18C91EFDDAF000FA1C6A /* LoginViewController.swift in Sources */,
+				8928394E1F030EBA00AEF97C /* StorageService.swift in Sources */,
 				894C18C71EFDDA8000FA1C6A /* User.swift in Sources */,
 				8925E1E11F018BF300E3C2EC /* UserService.swift in Sources */,
 				8925E1EB1F01D5C400E3C2EC /* HomeViewController.swift in Sources */,
@@ -312,6 +319,7 @@
 				892839471F02DB8C00AEF97C /* MainTabBarController.swift in Sources */,
 				8925E1ED1F01D5DA00E3C2EC /* FindFriendsViewController.swift in Sources */,
 				8925E1E61F01C03100E3C2EC /* Constants.swift in Sources */,
+				892839501F03117F00AEF97C /* PostService.swift in Sources */,
 				89BE4C651EFC6EE900803B42 /* AppDelegate.swift in Sources */,
 				8925E1E41F01AD8900E3C2EC /* CreateUsernameViewControler.swift in Sources */,
 			);
