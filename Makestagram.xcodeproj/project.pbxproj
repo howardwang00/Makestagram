@@ -17,6 +17,9 @@
 		892839491F02E11F00AEF97C /* MGPhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892839481F02E11F00AEF97C /* MGPhotoHelper.swift */; };
 		8928394E1F030EBA00AEF97C /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8928394D1F030EBA00AEF97C /* StorageService.swift */; };
 		892839501F03117F00AEF97C /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8928394F1F03117F00AEF97C /* PostService.swift */; };
+		892839521F0313B900AEF97C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892839511F0313B900AEF97C /* Post.swift */; };
+		892839541F03181D00AEF97C /* UIImage+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892839531F03181D00AEF97C /* UIImage+Size.swift */; };
+		892839561F0319F100AEF97C /* StorageReference+Push.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892839551F0319F100AEF97C /* StorageReference+Push.swift */; };
 		89452E5E1EFC72610063A9D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89452E5C1EFC72610063A9D0 /* LaunchScreen.storyboard */; };
 		89452E5F1EFC72610063A9D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89452E5D1EFC72610063A9D0 /* Main.storyboard */; };
 		89452E621EFC726B0063A9D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89452E601EFC726B0063A9D0 /* GoogleService-Info.plist */; };
@@ -42,6 +45,9 @@
 		892839481F02E11F00AEF97C /* MGPhotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MGPhotoHelper.swift; path = Helpers/MGPhotoHelper.swift; sourceTree = "<group>"; };
 		8928394D1F030EBA00AEF97C /* StorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StorageService.swift; path = Services/StorageService.swift; sourceTree = "<group>"; };
 		8928394F1F03117F00AEF97C /* PostService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostService.swift; path = Services/PostService.swift; sourceTree = "<group>"; };
+		892839511F0313B900AEF97C /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = Models/Post.swift; sourceTree = "<group>"; };
+		892839531F03181D00AEF97C /* UIImage+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Size.swift"; path = "Extensions/UIImage+Size.swift"; sourceTree = "<group>"; };
+		892839551F0319F100AEF97C /* StorageReference+Push.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "StorageReference+Push.swift"; path = "Extensions/StorageReference+Push.swift"; sourceTree = "<group>"; };
 		89452E5C1EFC72610063A9D0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89452E5D1EFC72610063A9D0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
 		89452E601EFC726B0063A9D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Supporting/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -89,6 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				8925E1E71F01C10D00E3C2EC /* Storyboard+Utility.swift */,
+				892839531F03181D00AEF97C /* UIImage+Size.swift */,
+				892839551F0319F100AEF97C /* StorageReference+Push.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -137,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				894C18C61EFDDA8000FA1C6A /* User.swift */,
+				892839511F0313B900AEF97C /* Post.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -314,6 +323,9 @@
 				894C18C71EFDDA8000FA1C6A /* User.swift in Sources */,
 				8925E1E11F018BF300E3C2EC /* UserService.swift in Sources */,
 				8925E1EB1F01D5C400E3C2EC /* HomeViewController.swift in Sources */,
+				892839561F0319F100AEF97C /* StorageReference+Push.swift in Sources */,
+				892839521F0313B900AEF97C /* Post.swift in Sources */,
+				892839541F03181D00AEF97C /* UIImage+Size.swift in Sources */,
 				8925E1E81F01C10D00E3C2EC /* Storyboard+Utility.swift in Sources */,
 				892839491F02E11F00AEF97C /* MGPhotoHelper.swift in Sources */,
 				892839471F02DB8C00AEF97C /* MainTabBarController.swift in Sources */,
