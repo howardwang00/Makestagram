@@ -9,8 +9,14 @@
 import UIKit
 
 class MainTabBarController: UITabBarController {
+    let photoHelper = MGPhotoHelper()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        photoHelper.completionHandler = { image in
+            print("Handle image")
+        }
         
         delegate = self
         tabBar.unselectedItemTintColor = .black
@@ -20,7 +26,7 @@ class MainTabBarController: UITabBarController {
 extension MainTabBarController: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         if viewController.tabBarItem.tag == 1 {
-            print("Take photo")
+            photoHelper.presentActionSheet(from: self)
             return false
         } else {
             return true

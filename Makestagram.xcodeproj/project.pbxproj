@@ -14,6 +14,7 @@
 		8925E1EB1F01D5C400E3C2EC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8925E1EA1F01D5C400E3C2EC /* HomeViewController.swift */; };
 		8925E1ED1F01D5DA00E3C2EC /* FindFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8925E1EC1F01D5DA00E3C2EC /* FindFriendsViewController.swift */; };
 		892839471F02DB8C00AEF97C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892839461F02DB8C00AEF97C /* MainTabBarController.swift */; };
+		892839491F02E11F00AEF97C /* MGPhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892839481F02E11F00AEF97C /* MGPhotoHelper.swift */; };
 		89452E5E1EFC72610063A9D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89452E5C1EFC72610063A9D0 /* LaunchScreen.storyboard */; };
 		89452E5F1EFC72610063A9D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89452E5D1EFC72610063A9D0 /* Main.storyboard */; };
 		89452E621EFC726B0063A9D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89452E601EFC726B0063A9D0 /* GoogleService-Info.plist */; };
@@ -36,6 +37,7 @@
 		8925E1EA1F01D5C400E3C2EC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Controllers/HomeViewController.swift; sourceTree = "<group>"; };
 		8925E1EC1F01D5DA00E3C2EC /* FindFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FindFriendsViewController.swift; path = Controllers/FindFriendsViewController.swift; sourceTree = "<group>"; };
 		892839461F02DB8C00AEF97C /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabBarController.swift; path = Controllers/MainTabBarController.swift; sourceTree = "<group>"; };
+		892839481F02E11F00AEF97C /* MGPhotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MGPhotoHelper.swift; path = Helpers/MGPhotoHelper.swift; sourceTree = "<group>"; };
 		89452E5C1EFC72610063A9D0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89452E5D1EFC72610063A9D0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
 		89452E601EFC726B0063A9D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Supporting/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 				8925E1E71F01C10D00E3C2EC /* Storyboard+Utility.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		8928394A1F02E12400AEF97C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				892839481F02E11F00AEF97C /* MGPhotoHelper.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		89452E641EFC74830063A9D0 /* Storyboards */ = {
@@ -149,6 +159,7 @@
 				89BE4C641EFC6EE900803B42 /* AppDelegate.swift */,
 				89BE4C6B1EFC6EE900803B42 /* Assets.xcassets */,
 				8925E1E91F01C11200E3C2EC /* Extensions */,
+				8928394A1F02E12400AEF97C /* Helpers */,
 				894C18CA1EFDDB7E00FA1C6A /* Models */,
 				8925E1E21F018BFE00E3C2EC /* Services */,
 				89452E641EFC74830063A9D0 /* Storyboards */,
@@ -297,6 +308,7 @@
 				8925E1E11F018BF300E3C2EC /* UserService.swift in Sources */,
 				8925E1EB1F01D5C400E3C2EC /* HomeViewController.swift in Sources */,
 				8925E1E81F01C10D00E3C2EC /* Storyboard+Utility.swift in Sources */,
+				892839491F02E11F00AEF97C /* MGPhotoHelper.swift in Sources */,
 				892839471F02DB8C00AEF97C /* MainTabBarController.swift in Sources */,
 				8925E1ED1F01D5DA00E3C2EC /* FindFriendsViewController.swift in Sources */,
 				8925E1E61F01C03100E3C2EC /* Constants.swift in Sources */,
