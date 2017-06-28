@@ -25,13 +25,27 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostImageCell" id="scA-61-fbq">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostImageCell" rowHeight="375" id="scA-61-fbq" customClass="PostImageCell" customModule="Makestagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="375"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="scA-61-fbq" id="WdA-W8-RoI">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="374.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zpB-sa-v3S">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="zpB-sa-v3S" firstAttribute="leading" secondItem="WdA-W8-RoI" secondAttribute="leading" id="ISO-gV-2wC"/>
+                                                <constraint firstItem="zpB-sa-v3S" firstAttribute="top" secondItem="WdA-W8-RoI" secondAttribute="top" id="Jig-kE-TjL"/>
+                                                <constraint firstAttribute="bottom" secondItem="zpB-sa-v3S" secondAttribute="bottom" id="rWk-vP-EV7"/>
+                                                <constraint firstAttribute="trailing" secondItem="zpB-sa-v3S" secondAttribute="trailing" id="zpx-KI-ycc"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="postImageView" destination="zpB-sa-v3S" id="xDY-mw-USc"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

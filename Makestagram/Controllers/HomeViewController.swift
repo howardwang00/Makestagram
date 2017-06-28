@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
@@ -16,12 +17,13 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureTableView()
+        
         UserService.posts(for: User.current) { (posts) in
             self.posts = posts
             self.tableView.reloadData()
         }
     }
-    
 }
 
 extension HomeViewController: UITableViewDataSource {
@@ -29,10 +31,18 @@ extension HomeViewController: UITableViewDataSource {
         return posts.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PostImageCell", for: indexPath)
-        cell.backgroundColor = .red
+        let post = posts[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PostImageCell", for: indexPath) as! PostImageCell
+        
+        let imageURL = URL(string: post.imageURL)
+        cell.postImageView.kf.setImage(with: imageURL)
         
         return cell
+    }
+    
+    func configureTableView() {
+        tableView.tableFooterView = UIView()
+        tableView.separatorStyle = .none
     }
 }
 
