@@ -22,6 +22,8 @@
 		892839561F0319F100AEF97C /* StorageReference+Push.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892839551F0319F100AEF97C /* StorageReference+Push.swift */; };
 		892839581F031E2700AEF97C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892839571F031E2700AEF97C /* Home.storyboard */; };
 		8928CB0F1F040EA80031FE7E /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8928CB0E1F040EA80031FE7E /* PostImageCell.swift */; };
+		8928CB121F0423870031FE7E /* PostHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8928CB111F0423870031FE7E /* PostHeaderCell.swift */; };
+		8928CB141F042A5A0031FE7E /* PostActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8928CB131F042A5A0031FE7E /* PostActionCell.swift */; };
 		89452E5E1EFC72610063A9D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89452E5C1EFC72610063A9D0 /* LaunchScreen.storyboard */; };
 		89452E5F1EFC72610063A9D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89452E5D1EFC72610063A9D0 /* Main.storyboard */; };
 		89452E621EFC726B0063A9D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89452E601EFC726B0063A9D0 /* GoogleService-Info.plist */; };
@@ -52,6 +54,8 @@
 		892839551F0319F100AEF97C /* StorageReference+Push.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "StorageReference+Push.swift"; path = "Extensions/StorageReference+Push.swift"; sourceTree = "<group>"; };
 		892839571F031E2700AEF97C /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = Storyboards/Home.storyboard; sourceTree = "<group>"; };
 		8928CB0E1F040EA80031FE7E /* PostImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostImageCell.swift; path = Views/PostImageCell.swift; sourceTree = "<group>"; };
+		8928CB111F0423870031FE7E /* PostHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostHeaderCell.swift; path = Views/PostHeaderCell.swift; sourceTree = "<group>"; };
+		8928CB131F042A5A0031FE7E /* PostActionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostActionCell.swift; path = Views/PostActionCell.swift; sourceTree = "<group>"; };
 		89452E5C1EFC72610063A9D0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89452E5D1EFC72610063A9D0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
 		89452E601EFC726B0063A9D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Supporting/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				8928CB0E1F040EA80031FE7E /* PostImageCell.swift */,
+				8928CB111F0423870031FE7E /* PostHeaderCell.swift */,
+				8928CB131F042A5A0031FE7E /* PostActionCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -338,6 +344,7 @@
 				894C18C71EFDDA8000FA1C6A /* User.swift in Sources */,
 				8925E1E11F018BF300E3C2EC /* UserService.swift in Sources */,
 				8925E1EB1F01D5C400E3C2EC /* HomeViewController.swift in Sources */,
+				8928CB141F042A5A0031FE7E /* PostActionCell.swift in Sources */,
 				892839561F0319F100AEF97C /* StorageReference+Push.swift in Sources */,
 				8928CB0F1F040EA80031FE7E /* PostImageCell.swift in Sources */,
 				892839521F0313B900AEF97C /* Post.swift in Sources */,
@@ -349,6 +356,7 @@
 				8925E1E61F01C03100E3C2EC /* Constants.swift in Sources */,
 				892839501F03117F00AEF97C /* PostService.swift in Sources */,
 				89BE4C651EFC6EE900803B42 /* AppDelegate.swift in Sources */,
+				8928CB121F0423870031FE7E /* PostHeaderCell.swift in Sources */,
 				8925E1E41F01AD8900E3C2EC /* CreateUsernameViewControler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
