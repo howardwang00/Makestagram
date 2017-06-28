@@ -14,6 +14,12 @@ class HomeViewController: UIViewController {
     
     var posts = [Post]()
     
+    let timeStampFormatter: DateFormatter = {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .short
+        return dateFormatter
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -51,6 +57,7 @@ extension HomeViewController: UITableViewDataSource {
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "PostActionCell") as! PostActionCell
+            cell.timeStampLabel.text = timeStampFormatter.string(from: post.creationDate)
             
             return cell
         default:

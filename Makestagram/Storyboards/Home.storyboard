@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--Makestagram-->
         <scene sceneID="fD7-rW-D1l">
             <objects>
                 <viewController id="Rug-av-cwb" customClass="HomeViewController" customModule="Makestagram" customModuleProvider="target" sceneMemberID="viewController">
@@ -159,7 +159,7 @@
                             <constraint firstItem="LKB-Iw-2YK" firstAttribute="leading" secondItem="FEC-DB-MGU" secondAttribute="leading" id="xo3-FI-hem"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="rrn-Xl-4qv"/>
+                    <navigationItem key="navigationItem" title="Makestagram" id="rrn-Xl-4qv"/>
                     <connections>
                         <outlet property="tableView" destination="LKB-Iw-2YK" id="ZE3-5V-CMv"/>
                     </connections>
