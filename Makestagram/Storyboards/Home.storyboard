@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EV5-5c-EM4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="fD7-rW-D1l">
+            <objects>
+                <viewController id="Rug-av-cwb" customClass="HomeViewController" customModule="Makestagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tAa-oP-LwS"/>
+                        <viewControllerLayoutGuide type="bottom" id="7vD-iX-cGi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FEC-DB-MGU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LKB-Iw-2YK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostImageCell" id="scA-61-fbq">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="scA-61-fbq" id="WdA-W8-RoI">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Rug-av-cwb" id="oaD-WF-Yju"/>
+                                    <outlet property="delegate" destination="Rug-av-cwb" id="h4X-ac-ELa"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LKB-Iw-2YK" firstAttribute="top" secondItem="FEC-DB-MGU" secondAttribute="top" id="Sr4-vk-agw"/>
+                            <constraint firstAttribute="trailing" secondItem="LKB-Iw-2YK" secondAttribute="trailing" id="fuD-aF-RzY"/>
+                            <constraint firstAttribute="bottom" secondItem="LKB-Iw-2YK" secondAttribute="bottom" id="xYZ-EG-mBP"/>
+                            <constraint firstItem="LKB-Iw-2YK" firstAttribute="leading" secondItem="FEC-DB-MGU" secondAttribute="leading" id="xo3-FI-hem"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rrn-Xl-4qv"/>
+                    <connections>
+                        <outlet property="tableView" destination="LKB-Iw-2YK" id="ZE3-5V-CMv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FpF-nj-xRo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-338.39999999999998" y="1012.4437781109445"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="El0-os-MTh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EV5-5c-EM4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="tab_home_black" id="NNQ-5U-h7h">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RwJ-kn-O1d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Rug-av-cwb" kind="relationship" relationship="rootViewController" id="Tbb-ee-t57"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wwr-xF-t7m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1119" y="1013"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab_home_black" width="25" height="25"/>
+    </resources>
+</document>
