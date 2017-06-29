@@ -27,9 +27,18 @@ struct Constants {
         static let postHeaderCell = "PostHeaderCell"
         static let postImageCell = "PostImageCell"
         static let postActionCell = "PostActionCell"
+        
+        static let image_url = "image_url"
+        static let image_height = "image_height"
+        static let created_at = "created_at"
+        
+        static let like_count = "like_count"
+        static let poster = "poster"
+        static let uid = "uid"
+        static let username = "username"
     }
     
-    struct Likes {
-        
+    struct LikeService {
+        static let postLikes = "postLikes"
     }
 }

@@ -40,6 +40,7 @@ extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let post = posts[indexPath.section]
         
@@ -57,7 +58,8 @@ extension HomeViewController: UITableViewDataSource {
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: Constants.Post.postActionCell) as! PostActionCell
-            cell.timeStampLabel.text = timeStampFormatter.string(from: post.creationDate)
+            cell.delegate = self
+            configureCell(cell, with: post)
             
             return cell
         default:
@@ -70,6 +72,13 @@ extension HomeViewController: UITableViewDataSource {
         tableView.tableFooterView = UIView()
         tableView.separatorStyle = .none
     }
+    
+    func configureCell(_ cell: PostActionCell, with post: Post) {
+        cell.timeStampLabel.text = timeStampFormatter.string(from: post.creationDate)
+        cell.likeButton.isSelected = post.isLiked
+        cell.likesLabel.text = "\(post.likeCount) likes"
+    }
+    
 }
 
 extension HomeViewController: UITableViewDelegate {
@@ -85,6 +94,34 @@ extension HomeViewController: UITableViewDelegate {
             
         default:
             fatalError()
+        }
+    }
+}
+
+extension HomeViewController: PostActionCellDelegate {
+    func didTapLikeButton(_ likeButton: UIButton, on cell: PostActionCell) {
+        guard let indexPath = tableView.indexPath(for: cell)
+            else { return }
+        
+        likeButton.isUserInteractionEnabled = false
+        let post = posts[indexPath.section]
+        
+        LikeService.setIsLiked(!post.isLiked, for: post) { (success) in
+            defer {
+                likeButton.isUserInteractionEnabled = true
+            }
+            
+            guard success else { return }
+            
+            post.likeCount += !post.isLiked ? 1 : -1
+            post.isLiked = !post.isLiked
+            
+            guard let cell = self.tableView.cellForRow(at: indexPath) as? PostActionCell
+                else { return }
+            
+            DispatchQueue.main.async {
+                self.configureCell(cell, with: post)
+            }
         }
     }
 }
