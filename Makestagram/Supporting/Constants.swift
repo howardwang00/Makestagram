@@ -41,4 +41,9 @@ struct Constants {
     struct LikeService {
         static let postLikes = "postLikes"
     }
+    
+    struct FollowService {
+        static let followers = "followers"
+        static let following = "following"
+    }
 }

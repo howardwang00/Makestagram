@@ -30,6 +30,7 @@
 		89452E6A1EFC77960063A9D0 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89452E691EFC77960063A9D0 /* Login.storyboard */; };
 		894C18C71EFDDA8000FA1C6A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894C18C61EFDDA8000FA1C6A /* User.swift */; };
 		894C18C91EFDDAF000FA1C6A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894C18C81EFDDAF000FA1C6A /* LoginViewController.swift */; };
+		895870501F05820300084356 /* FollowService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8958704F1F05820300084356 /* FollowService.swift */; };
 		89BE4C651EFC6EE900803B42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BE4C641EFC6EE900803B42 /* AppDelegate.swift */; };
 		89BE4C6C1EFC6EE900803B42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89BE4C6B1EFC6EE900803B42 /* Assets.xcassets */; };
 		89D0D2301F05777E008E68AF /* LikeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D0D22F1F05777E008E68AF /* LikeService.swift */; };
@@ -64,6 +65,7 @@
 		89452E691EFC77960063A9D0 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Storyboards/Login.storyboard; sourceTree = "<group>"; };
 		894C18C61EFDDA8000FA1C6A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
 		894C18C81EFDDAF000FA1C6A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
+		8958704F1F05820300084356 /* FollowService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FollowService.swift; path = Services/FollowService.swift; sourceTree = "<group>"; };
 		89BE4C611EFC6EE900803B42 /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BE4C641EFC6EE900803B42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89BE4C6B1EFC6EE900803B42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				8928394D1F030EBA00AEF97C /* StorageService.swift */,
 				8928394F1F03117F00AEF97C /* PostService.swift */,
 				89D0D22F1F05777E008E68AF /* LikeService.swift */,
+				8958704F1F05820300084356 /* FollowService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				895870501F05820300084356 /* FollowService.swift in Sources */,
 				894C18C91EFDDAF000FA1C6A /* LoginViewController.swift in Sources */,
 				8928394E1F030EBA00AEF97C /* StorageService.swift in Sources */,
 				894C18C71EFDDA8000FA1C6A /* User.swift in Sources */,
