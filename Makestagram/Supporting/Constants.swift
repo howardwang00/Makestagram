@@ -9,6 +9,10 @@
 import Foundation
 
 struct Constants {
+    
+    static let users = "users"
+    static let posts = "posts"
+    
     struct Segue {
         static let toCreateUsername = "toCreateUsername"
     }
@@ -17,5 +21,15 @@ struct Constants {
         static let currentUser = "currentUser"
         static let uid = "uid"
         static let username = "username"
+    }
+    
+    struct Post {
+        static let postHeaderCell = "PostHeaderCell"
+        static let postImageCell = "PostImageCell"
+        static let postActionCell = "PostActionCell"
+    }
+    
+    struct Likes {
+        
     }
 }

@@ -45,18 +45,18 @@ extension HomeViewController: UITableViewDataSource {
         
         switch indexPath.row {
         case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "PostHeaderCell") as! PostHeaderCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: Constants.Post.postHeaderCell) as! PostHeaderCell
             cell.usernameLabel.text = User.current.username
             
             return cell
         case 1:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "PostImageCell") as! PostImageCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: Constants.Post.postImageCell) as! PostImageCell
             let imageURL = URL(string: post.imageURL)
             cell.postImageView.kf.setImage(with: imageURL)
             
             return cell
         case 2:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "PostActionCell") as! PostActionCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: Constants.Post.postActionCell) as! PostActionCell
             cell.timeStampLabel.text = timeStampFormatter.string(from: post.creationDate)
             
             return cell
