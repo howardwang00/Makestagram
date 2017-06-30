@@ -46,4 +46,8 @@ struct Constants {
         static let followers = "followers"
         static let following = "following"
     }
+    
+    struct FindFriends {
+        static let findFriendsCell = "FindFriendsCell"
+    }
 }
