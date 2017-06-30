@@ -38,6 +38,7 @@ extension FindFriendsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.FindFriends.findFriendsCell) as! FindFriendsCell
+        cell.delegate = self
         configure(cell: cell, atIndexPath: indexPath)
         
         return cell
@@ -49,4 +50,23 @@ extension FindFriendsViewController: UITableViewDataSource {
         cell.followButton.isSelected = user.isFollowed
     }
 }
+
+extension FindFriendsViewController: FindFriendsCellDelegate {
+    func didTapFollowButton(_ followButton: UIButton, on cell: FindFriendsCell) {
+        guard let indexPath = findFriendsTableView.indexPath(for: cell) else { return }
+        
+        followButton.isUserInteractionEnabled = false
+        let followee = users[indexPath.row]
+        FollowService.setIsFollowing(!followee.isFollowed, fromCurrentUserTo: followee) { (success) in
+            defer {
+                followButton.isUserInteractionEnabled = true
+            }
+            
+            guard success else { return }
+            followee.isFollowed = !followee.isFollowed
+            self.findFriendsTableView.reloadRows(at: [indexPath], with: .none)
+        }
+    }
+}
+
 
