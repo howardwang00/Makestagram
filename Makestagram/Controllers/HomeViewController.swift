@@ -20,13 +20,23 @@ class HomeViewController: UIViewController {
         return dateFormatter
     }()
     
+    let refreshControl = UIRefreshControl()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configureTableView()
-        
+        reloadTimeline()
+    }
+    
+    func reloadTimeline() {
         UserService.timeline { (posts) in
             self.posts = posts
+            
+            if self.refreshControl.isRefreshing {
+                self.refreshControl.endRefreshing()
+            }
+            
             self.tableView.reloadData()
         }
     }
@@ -71,6 +81,9 @@ extension HomeViewController: UITableViewDataSource {
     func configureTableView() {
         tableView.tableFooterView = UIView()
         tableView.separatorStyle = .none
+        
+        refreshControl.addTarget(self, action: #selector(reloadTimeline), for: .valueChanged)
+        tableView.addSubview(refreshControl)
     }
     
     func configureCell(_ cell: PostActionCell, with post: Post) {
