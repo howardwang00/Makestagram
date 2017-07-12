@@ -27,9 +27,36 @@ struct PostService {
     private static func create(forURLString urlString: String, aspectHeight: CGFloat) {
         let currentUser = User.current
         let post = Post(imageURL: urlString, imageHeight: aspectHeight)
-        let dict = post.dictValue
         
-        let postRef = Database.database().reference().child(Constants.posts).child(currentUser.uid).childByAutoId()
-        postRef.updateChildValues(dict)
+        let rootRef = Database.database().reference()
+        let newPostRef = rootRef.child(Constants.posts).child(currentUser.uid).childByAutoId()
+        let newPostKey = newPostRef.key
+        
+        UserService.followers(for: currentUser) { (followerUIDs) in
+            let timelinePostDict = [Constants.Follow.posterUID : currentUser.uid]
+            var updatedData: [String : Any] = ["\(Constants.timeline)/\(currentUser.uid)/\(newPostKey)" : timelinePostDict]
+            
+            for uid in followerUIDs {
+                updatedData["\(Constants.timeline)/\(uid)/\(newPostKey)"] = timelinePostDict
+            }
+            let postDict = post.dictValue
+            updatedData["\(Constants.posts)/\(currentUser.uid)/\(newPostKey)"] = postDict
+            
+            rootRef.updateChildValues(updatedData)
+        }
     }
+    
+    public static func show(forKey postKey: String, posterUID: String, completion: @escaping (Post?) -> Void) {
+        let postRef = Database.database().reference().child(Constants.posts).child(posterUID).child(postKey)
+        postRef.observeSingleEvent(of: .value, with: { (snapshot) in
+            guard let post = Post(snapshot: snapshot) else {
+                return completion(nil)
+            }
+            LikeService.isPostLiked(post) { (isLiked) in
+                post.isLiked = isLiked
+                completion(post)
+            }
+        })
+    }
+    
 }

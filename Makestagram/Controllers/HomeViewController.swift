@@ -25,7 +25,7 @@ class HomeViewController: UIViewController {
         
         configureTableView()
         
-        UserService.posts(for: User.current) { (posts) in
+        UserService.timeline { (posts) in
             self.posts = posts
             self.tableView.reloadData()
         }
@@ -47,7 +47,7 @@ extension HomeViewController: UITableViewDataSource {
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: Constants.Post.postHeaderCell) as! PostHeaderCell
-            cell.usernameLabel.text = User.current.username
+            cell.usernameLabel.text = post.poster.username
             
             return cell
         case 1:

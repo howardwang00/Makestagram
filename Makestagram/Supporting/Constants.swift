@@ -12,6 +12,8 @@ struct Constants {
     
     static let users = "users"
     static let posts = "posts"
+    static let postLikes = "postLikes"
+    static let timeline = "timeline"
     
     struct Segue {
         static let toCreateUsername = "toCreateUsername"
@@ -38,13 +40,10 @@ struct Constants {
         static let username = "username"
     }
     
-    struct LikeService {
-        static let postLikes = "postLikes"
-    }
-    
-    struct FollowService {
+    struct Follow {
         static let followers = "followers"
         static let following = "following"
+        static let posterUID = "poster_uid"
     }
     
     struct FindFriends {
